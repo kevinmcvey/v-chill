@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "v chll",
+    "description": "mk yr brwsr v chll",
+    "version": "1.0",
+
+    "browser_action": {
+        "default_title": "tggl chll",
+        "default_icon": "icon.png"
+    },
+
+    "permissions": [
+        "activeTab"
+    ],
+
+    "content_scripts": [
+        {
+            "matches": [ "<all_urls>" ],
+            "js": [ "popup.js" ],
+            "run_at": "document_idle"
+        }
+    ]
+}
