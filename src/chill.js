@@ -31,7 +31,7 @@ function makeNodeChill(node) {
     if (node.textContent !== undefined) {
         var textContent = node.textContent;
 
-        // Lowercase is so rad.
+        // lowercase is so rad.
         textContent = textContent.toLowerCase();
 
         textContent = textContent.replace(/pretty/g, 'p');
