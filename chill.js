@@ -34,22 +34,11 @@ function makeNodeChill(node) {
         // Lowercase is so rad.
         textContent = textContent.toLowerCase();
 
-        // Articles are not rad.
-        textContent = textContent.replace(/(a|an|the)(?=\s)/g, '');
-
-        // Here's some words that aren't rad. No lookback in JS Regex :(
-        textContent = textContent.replace(/\syour(?=\s)/g, ' yr');
-        textContent = textContent.replace(/\syou(?=\s)/g, ' u');
-        textContent = textContent.replace(/\sis(?=\s)/g, ' =');
-        textContent = textContent.replace(/to(?=\s)/g, '->');
-        textContent = textContent.replace(/for(?=\s)/g, 'fr');
         textContent = textContent.replace(/pretty/g, 'p');
         textContent = textContent.replace(/very/g, 'v');
-
-        // And here's some word endings that aren't rad.
-        textContent = textContent.replace(/ion/g, '');
-        textContent = textContent.replace(/er/g, 'r');
-        textContent = textContent.replace(/ies/g, 's');
+        textContent = textContent.replace(/as fuck/g, 'af');
+        textContent = textContent.replace(/god damn/g, 'gd');
+        textContent = textContent.replace(/point/g, 'fleek');
 
         node.textContent = textContent;
     }

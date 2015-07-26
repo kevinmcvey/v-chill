@@ -1,12 +1,11 @@
 {
     "manifest_version": 2,
-    "name": "v chll",
-    "description": "mk yr brwsr v chll",
+    "name": "v chill",
+    "description": "make your browser v chill",
     "version": "1.0",
 
     "browser_action": {
-        "default_title": "tggl chll",
-        "default_icon": "icon.png"
+        "default_title": "p chill yeah"
     },
 
     "permissions": [
@@ -16,7 +15,7 @@
     "content_scripts": [
         {
             "matches": [ "<all_urls>" ],
-            "js": [ "popup.js" ],
+            "js": [ "chill.js" ],
             "run_at": "document_idle"
         }
     ]
