@@ -39,6 +39,7 @@ function makeNodeChill(node) {
         textContent = textContent.replace(/as fuck/g, 'af');
         textContent = textContent.replace(/god damn/g, 'gd');
         textContent = textContent.replace(/point/g, 'fleek');
+        textContent = textContent.replace(/i don't know/g, 'idk');
 
         node.textContent = textContent;
     }
